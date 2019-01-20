@@ -63,7 +63,11 @@ obj-$(CONFIG_CRASH_DUMP)	+= crash_dump.o
 obj-$(CONFIG_SWP_EMULATE)	+= swp_emulate.o
 CFLAGS_swp_emulate.o		:= -Wa,-march=armv7-a
 obj-$(CONFIG_HAVE_HW_BREAKPOINT)	+= hw_breakpoint.o
-
+obj-$(CONFIG_ALUCARD_HOTPLUG) 	+= alucard_hotplug.o
+obj-$(CONFIG_MSM_HOTPLUG) 	+= msm_hotplug.o
+obj-$(CONFIG_ZEN_DECISION) 	+= msm_zen_decision.o
+obj-$(CONFIG_FAST_CHARGER) 	+= fastchg.o
+obj-$(CONFIG_AUTOSMP) 		+= autosmp.o
 obj-$(CONFIG_CPU_XSCALE)	+= xscale-cp0.o
 obj-$(CONFIG_CPU_XSC3)		+= xscale-cp0.o
 obj-$(CONFIG_CPU_MOHAWK)	+= xscale-cp0.o

@@ -1475,6 +1475,40 @@ endmenu
 
 menu "Kernel Features"
 
+menu "Miscellaneous Kernel Features"
+
+config ALUCARD_HOTPLUG
+	bool "Enable alucard-hotplug cpu hotplug driver"
+	default n
+	help
+	  Generic Alucard-hotplug cpu hotplug driver for ARM SOCs
+
+config AUTOSMP
+	bool "Enable autosmp cpu hotplug driver"
+	default n
+	help
+	  Generic autosmp cpu hotplug driver for ARM SOCs
+
+config MSM_HOTPLUG
+	bool "Enable msm-hotplug cpu hotplug driver"
+	default n
+	help
+	  Generic msm-hotplug cpu hotplug driver for ARM SOCs
+
+config ZEN_DECISION
+	bool "Enable zen decision cpu hotplug driver"
+	default n
+	help
+	  Generic zen-decision cpu hotplug driver for ARM SOCs
+
+config FAST_CHARGER
+	bool "Enable fast charger driver"
+	default n
+	help
+	  Fast charger for ARM SOCs
+	  
+endmenu
+
 config HAVE_SMP
 	bool
 	help
